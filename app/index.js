@@ -88,9 +88,9 @@ module.exports = generators.Base.extend({
 	install: function() {
 		var message = chalk.yellow.bold('Running NPM install, hold on ...');
 		this.log(yosay(message, { maxLength: 22 }));
+		this.npmInstall();
 	},
 	end: function() {
-		this.spawnCommand('npm', ['install']);
 		this.spawnCommand('grunt', ['serve']);
 	}
 });
