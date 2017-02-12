@@ -1,0 +1,20 @@
+{
+  "name": "generator-dwwpugemail",
+  "description": "Grunt task to turn Pug template into HTML e-mail templates and Sass into inlined CSS",
+  "author": "Dennis Burger <dennis@dutchwebworks.nl>",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-inline-css": "^0.1.5",
+    "grunt-sass": "^2.0.0",
+    "jstransformer-escape-html": "^1.0.0",
+    "jstransformer-markdown-it": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
