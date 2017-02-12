@@ -1,8 +1,10 @@
 @import
 	"base/config";
 
+// ---------------------------------------------
+// MediaQuery specific
+// ---------------------------------------------
+
 @media(min-width: $mq-hor-01) {
-	.header {
-		background: red;
-	}
+	
 }

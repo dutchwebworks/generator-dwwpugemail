@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 			},
 			sass: {
 				files: '<%= config.scssPath %>/**/*.scss',
-				tasks: ['sass:dev']
+				tasks: ['recompilePugSass']
 			},
 			pug: {
 				files: '<%= config.src %>/**/*.pug',
@@ -135,6 +135,11 @@ module.exports = function(grunt) {
 			}
 		},
 	});
+
+	grunt.registerTask('recompilePugSass', 'Recompile both Pug and Sass', [
+		'sass:dev',
+		'pug',
+	]);
 
 	grunt.registerTask('build', 'Compile Pug templates and Sass to Css. Copy over Css and images files.', [
 		'clean:dist',

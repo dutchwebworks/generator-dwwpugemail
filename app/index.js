@@ -21,10 +21,9 @@ module.exports = generators.Base.extend({
 		// Copy over files and directories
 		// ---------------------------
 
-		this.fs.copy(sourceRoot + '/app', destRoot + '/app');
+		this.fs.copy(sourceRoot + '/src', destRoot + '/src');
 		this.fs.copy(sourceRoot + '/_gitignore', destRoot + '/.gitignore');
-		this.fs.copy(sourceRoot + '/package.json', destRoot + '/package.json');
-		this.fs.copy(sourceRoot + '/README.md', destRoot + '/README.md');
+		this.fs.copy(sourceRoot + '/Gruntfile.js', destRoot + '/Gruntfile.js');
 
 		// ---------------------------
 		// Copy over (template) files
@@ -70,7 +69,7 @@ module.exports = generators.Base.extend({
 		callback();
 	},
 	initializing: function() {
-		var message = chalk.yellow.bold('FIRST TEXT LINE') + chalk.yellow('SECOND TEXT LINE');
+		var message = chalk.yellow.bold('Welcome to the Dutchwebworks ') + chalk.yellow('Pug e-mail template project');
 		this.log(yosay(message, { maxLength: 16 }));
 	},
 	promting: function() {
@@ -87,11 +86,11 @@ module.exports = generators.Base.extend({
 		this._createProjectFileSystem();
 	},
 	install: function() {
-		var message = chalk.yellow.bold('FIRST TEXT LINE');
+		var message = chalk.yellow.bold('Running NPM install, hold on ...');
 		this.log(yosay(message, { maxLength: 22 }));
+		this.npmInstall();
 	},
 	end: function() {
-		// this.spawnCommand('npm', ['install']);
-		// this.spawnCommand('gulp', ['serve', 'a-third-argument']);
+		this.spawnCommand('grunt', ['serve']);
 	}
 });
