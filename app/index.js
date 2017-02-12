@@ -69,7 +69,7 @@ module.exports = generators.Base.extend({
 		callback();
 	},
 	initializing: function() {
-		var message = chalk.yellow.bold('FIRST TEXT LINE') + chalk.yellow('SECOND TEXT LINE');
+		var message = chalk.yellow.bold('Welcome to the Dutchwebworks ') + chalk.yellow('Pug e-mail template project');
 		this.log(yosay(message, { maxLength: 16 }));
 	},
 	promting: function() {
@@ -86,11 +86,11 @@ module.exports = generators.Base.extend({
 		this._createProjectFileSystem();
 	},
 	install: function() {
-		var message = chalk.yellow.bold('FIRST TEXT LINE');
+		var message = chalk.yellow.bold('Running NPM install, hold on ...');
 		this.log(yosay(message, { maxLength: 22 }));
 	},
 	end: function() {
-		// this.spawnCommand('npm', ['install']);
-		// this.spawnCommand('gulp', ['serve', 'a-third-argument']);
+		this.spawnCommand('npm', ['install']);
+		this.spawnCommand('grunt', ['serve']);
 	}
 });
