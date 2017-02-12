@@ -1,0 +1,8 @@
+@import
+	"base/config";
+
+@media(min-width: $mq-hor-01) {
+	.header {
+		background: red;
+	}
+}
