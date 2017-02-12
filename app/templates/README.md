@@ -1,8 +1,8 @@
-# APM Interactive - Revit BtoB webshop responsive HTML e-mail templates
+# <%= appname %> responsive HTML e-mail templates
 
 Using GruntJS, Pug (templating system) and Sass (CSS) to generate responsive HTML e-mails with inlined CSS.
 
-*By Dennis Burger, Poort80 Amsterdam, january 2017*
+*By <%= appauthor %>, Dutchwebworks Waddinxveen, february 2017*
 
 ## One time installation
 
@@ -42,13 +42,6 @@ These HTML e-mail templates need to be tested in the following (web) e-mail clie
 * Web e-mail clients in Chrome, Internet Explorer, Edge and Firefox: Hotmail and Gmail.
 * Smartphone: iOS Mail, Android Gmail.
 * Apple Mail.
-
-### Test tool and account
-
-Please see the Poort80 Wiki page regarding:
-
-* [MailTemplates](https://wiki.poort80.nl/display/P80/MailTemplate)
-* [Poort80 SMTP tool](https://www.poort80.net/emailtester/)
 
 ## More info
 
