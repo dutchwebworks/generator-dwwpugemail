@@ -1,0 +1,29 @@
+{
+  "name": "generator-dwwpugemail",
+  "version": "1.0.0",
+  "description": "Simple Pug email templates",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dutchwebworks/generator-generator-dwwpugemail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dutchwebworks/generator-generator-dwwpugemail/issues"
+  },
+  "homepage": "https://github.com/dutchwebworks/generator-generator-dwwpugemail",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Dennis Burger",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "mkdirp": "^0.5.1",
+    "yeoman-generator": "^0.21.1",
+    "yosay": "^1.1.0"
+  }
+}
+
