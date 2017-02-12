@@ -21,10 +21,9 @@ module.exports = generators.Base.extend({
 		// Copy over files and directories
 		// ---------------------------
 
-		this.fs.copy(sourceRoot + '/app', destRoot + '/app');
+		this.fs.copy(sourceRoot + '/src', destRoot + '/src');
 		this.fs.copy(sourceRoot + '/_gitignore', destRoot + '/.gitignore');
-		this.fs.copy(sourceRoot + '/package.json', destRoot + '/package.json');
-		this.fs.copy(sourceRoot + '/README.md', destRoot + '/README.md');
+		this.fs.copy(sourceRoot + '/Gruntfile.js', destRoot + '/Gruntfile.js');
 
 		// ---------------------------
 		// Copy over (template) files
