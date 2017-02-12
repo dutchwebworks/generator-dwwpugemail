@@ -1,8 +1,8 @@
 {
-  "name": "generator-dwwpugemail",
-  "description": "Grunt task to turn Pug template into HTML e-mail templates and Sass into inlined CSS",
-  "author": "Dennis Burger <dennis@dutchwebworks.nl>",
-  "version": "1.0.0",
+  "name": "<%= appname %>",
+  "description": "<%= appdescription %>",
+  "author": "<%= appauthor %> <<%= youremail %>>",
+  "version": "<%= appversion %>",
   "main": "Gruntfile.js",
   "devDependencies": {
     "grunt": "^1.0.1",
