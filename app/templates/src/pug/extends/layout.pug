@@ -1,25 +1,25 @@
 block config
-    include ../includes/config
+    include ../includes/config.pug
 
-doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+include ../includes/doctype-html-401.pug
 
-html(lang= setLanguage)
+html(lang=htmlLang)
     head
-        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no")
-        meta(name="format-detection" content="telephone=no")
-        meta(name="format-detection" content="email=no")
+
+        include ../includes/meta-tags.pug
 
         if (addExternalCssLink)
             link(href="css/style.css" rel="stylesheet" type="text/css" media="all")
 
         if (addEmbeddedCssMediaQueries == true)
-            style(type="text/css" media="all")
+            style(rel="stylesheet" type="text/css" media="all")
                 include ../../../dist/css/mq.css
 
         block head
 
-        title #{emailTitle}
-    body(style="margin: 0px;padding: 0px;")
+        title #{title}
+
+    body
 
         block content
 

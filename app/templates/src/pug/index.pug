@@ -1,10 +1,9 @@
-extends extends/layout
+extends extends/layout.pug
 append config
-    - var setLanguage = "en"
-    - var emailTitle = "Index"
-    - var addExternalCssLink = "css/style.css"
+    - var addExternalCssLink = true
+    - var title = "E-mail template"
 
 block content
-    include includes/header.pug
+    include modules/header.pug
     include modules/cart-table.pug
-    include includes/footer.pug
+    include modules/footer.pug
