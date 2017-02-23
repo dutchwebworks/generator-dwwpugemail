@@ -1,9 +1,22 @@
 extends extends/layout.pug
 append config
-    - var addExternalCssLink = true
-    - var title = "E-mail template"
+    - var title = "E-mail template example"
 
 block content
     include modules/header.pug
+
+    include modules/salutation.pug
+
     include modules/cart-table.pug
+
+    br 
+    br
+
+    +button("action.html", "Call to action")
+
+    br 
+    br
+
+    include modules/signature-default.pug
+
     include modules/footer.pug
