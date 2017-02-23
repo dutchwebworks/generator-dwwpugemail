@@ -1,6 +1,6 @@
 {
   "name": "generator-dwwpugemail",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Yeoman generator for a simple Pug e-mail templates with Grunt: Sass to Css compilation and a Css inliner task.",
   "main": "app/index.js",
   "repository": {
