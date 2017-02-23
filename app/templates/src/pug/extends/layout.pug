@@ -1,9 +1,10 @@
 block config
     include ../includes/config.pug
+    include ../includes/mixins.pug
 
 include ../includes/doctype-html-401.pug
 
-html(lang=htmlLang)
+html(lang= htmlLang)
     head
 
         include ../includes/meta-tags.pug
@@ -11,9 +12,9 @@ html(lang=htmlLang)
         if (addExternalCssLink)
             link(href="css/style.css" rel="stylesheet" type="text/css" media="all")
 
-        if (addEmbeddedCssMediaQueries == true)
+        if (addEmbeddedCss == true)
             style(rel="stylesheet" type="text/css" media="all")
-                include ../../../dist/css/mq.css
+                include ../../../dist/css/embed.css
 
         block head
 
