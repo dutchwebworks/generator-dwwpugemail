@@ -96,6 +96,14 @@ module.exports = function(grunt) {
 		// https://www.npmjs.com/package/grunt-inline-css
 		// Options: https://github.com/Automattic/juice#juicefilepath-options-callback
 		inlinecss: {
+			options: {
+				preserveMediaQueries: true,
+				removeStyleTags: false,
+				preserveImportant: true,
+				webResources: {
+					images: false
+				}
+			},
 			pages: {
 				files: [{
 					expand: true,
