@@ -2,7 +2,7 @@
 
 Using GruntJS, Pug (templating system) and Sass (CSS) to generate responsive HTML e-mails with inlined CSS.
 
-*By <%= appauthor %>, Dutchwebworks Waddinxveen, february 2017*
+*By <%= appauthor %>, Dutchwebworks Waddinxveen, may 2017*
 
 ## One time installation
 

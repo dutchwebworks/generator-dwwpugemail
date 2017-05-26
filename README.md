@@ -2,7 +2,7 @@
 
 Simple Pug e-mail templates with Grunt: Sass to Css compilation and a Css inliner task.
 
-*By Dennis Burger, Dutchwebworks Waddinxveen february 2017*
+*By Dennis Burger, Dutchwebworks Waddinxveen may 2017*
 
 ## One time installation
 
