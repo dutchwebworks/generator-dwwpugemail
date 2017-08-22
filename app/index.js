@@ -31,6 +31,7 @@ module.exports = generators.Base.extend({
 
 		this.fs.copyTpl(sourceRoot + '/package.json', destRoot + '/package.json', templateContext);
 		this.fs.copyTpl(sourceRoot + '/README.md', destRoot + '/README.md', templateContext);
+		this.fs.copyTpl(sourceRoot + '/src/pug/helpers/config.pug', destRoot + '/src/pug/helpers/config.pug', templateContext);
 	},
 	_getPrompt: function() {
 		var prompts = [

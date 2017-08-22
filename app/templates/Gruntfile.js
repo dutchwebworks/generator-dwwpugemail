@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 		inlinecss: {
 			options: {
 				preserveMediaQueries: true,
-				removeStyleTags: false,
+				// removeStyleTags: false,
 				preserveImportant: true,
 				webResources: {
 					images: false
