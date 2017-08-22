@@ -55,7 +55,7 @@ module.exports = class extends Generator {
 				appdescription: this.appdescription,
 				appauthor: this.appauthor,
 				youremail: this.youremail,
-				appversion: this.appversion				
+				appversion: this.appversion,		
 				appYear: new Date().getFullYear()
 			};
 
